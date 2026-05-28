@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guide de Commande GlobalDocs</title>
+    <!-- Intégration de Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -23,43 +25,74 @@
         h1 {
             color: #4a154b;
             border-bottom: 3px solid #ffcc00;
-            padding-bottom: 10px;
+            padding-bottom: 15px;
             text-align: center;
             font-size: 26px;
+            margin-bottom: 30px;
         }
         h2 {
             color: #4a154b;
             font-size: 18px;
-            margin-top: 25px;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 5px;
+            margin-top: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 8px;
+            display: flex;
+            align-items: center;
+        }
+        h2 i {
+            margin-right: 10px;
+            color: #ffcc00;
+            font-size: 20px;
         }
         .step-list {
             list-style-type: none;
             padding-left: 0;
+            margin-top: 10px;
         }
         .step-list li {
             margin-bottom: 12px;
             position: relative;
-            padding-left: 25px;
+            padding-left: 30px;
+            display: flex;
+            align-items: flex-start;
         }
-        .step-list li::before {
-            content: "✓";
-            color: #ffcc00;
-            font-weight: bold;
+        .step-list li i.li-icon {
+            color: #4a154b;
             position: absolute;
-            left: 0;
+            left: 5px;
+            top: 5px;
+            font-size: 14px;
         }
         .delivery-section {
             background-color: #f4eff5;
             border-left: 4px solid #4a154b;
-            padding: 15px;
-            margin-top: 30px;
-            border-radius: 0 4px 4px 0;
+            padding: 20px;
+            margin-top: 40px;
+            border-radius: 0 8px 8px 0;
         }
         .delivery-section h3 {
             margin-top: 0;
             color: #4a154b;
+            display: flex;
+            align-items: center;
+        }
+        .delivery-section h3 i {
+            margin-right: 10px;
+        }
+        .delivery-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        .delivery-list li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .delivery-list li i {
+            margin-right: 12px;
+            color: #4a154b;
+            width: 20px;
+            text-align: center;
         }
         .footer {
             margin-top: 40px;
@@ -74,9 +107,9 @@
             color: white;
             padding: 2px 8px;
             border-radius: 4px;
-            font-size: 12px;
+            font-size: 11px;
             font-weight: bold;
-            vertical-align: middle;
+            margin-left: 5px;
         }
         @media print {
             body { background: none; padding: 0; }
@@ -87,64 +120,66 @@
 <body>
 
 <div class="container">
-    <h1>📄 Guide d'Utilisation : Commander sur GlobalDocs</h1>
-    <p style="text-align: center; font-style: italic; color: #555;">
+    <h1><i class="fa-solid fa-file-invoice"></i> Guide d'Utilisation : Commander sur GlobalDocs</h1>
+    
+    <p style="text-align: center; font-style: italic; color: #555; margin-bottom: 30px;">
         Suivez ces étapes simples pour soumettre votre demande de document administratif sur la plateforme d'Africa Financial Group (AFG).
     </p>
 
-    <h2>🛠 Étape 1 : Accéder à la plateforme</h2>
+    <h2><i class="fa-solid fa-desktop"></i> Étape 1 : Accéder à la plateforme</h2>
     <ul class="step-list">
-        <li>Ouvrez le navigateur internet de votre smartphone ou de votre ordinateur.</li>
-        <li>Dans la barre de recherche, tapez : <strong>"Africa financial group"</strong>.</li>
-        <li>Sélectionnez et cliquez sur le premier lien officiel (<em>africafinancialgroup.net</em>).</li>
+        <li><i class="fa-solid fa-globe li-icon"></i> Ouvrez le navigateur internet de votre smartphone ou de votre ordinateur.</li>
+        <li><i class="fa-solid fa-magnifying-glass li-icon"></i> Dans la barre de recherche, tapez : <strong>"Africa financial group"</strong>.</li>
+        <li><i class="fa-solid fa-mouse-pointer li-icon"></i> Sélectionnez et cliquez sur le premier lien officiel (<em>africafinancialgroup.net</em>).</li>
     </ul>
 
-    <h2>🗂 Étape 2 : Sélectionner le service GlobalDocs</h2>
+    <h2><i class="fa-solid fa-folder-open"></i> Étape 2 : Sélectionner le service GlobalDocs</h2>
     <ul class="step-list">
-        <li>Une fois sur le site d'AFG, faites défiler la page vers le bas jusqu'à la section <strong>"Nos projets"</strong>.</li>
-        <li>Repérez l'option <strong>GlobalDocs</strong> (le service dédié aux démarches administratives ivoiriennes).</li>
-        <li>Cliquez sur l'onglet pour ouvrir l'interface.</li>
+        <li><i class="fa-solid fa-arrow-down li-icon"></i> Une fois sur le site d'AFG, faites défiler la page vers le bas jusqu'à la section <strong>"Nos projets"</strong>.</li>
+        <li><i class="fa-solid fa-file-shield li-icon"></i> Repérez l'option <strong>GlobalDocs</strong> (le service dédié aux démarches administratives ivoiriennes).</li>
+        <li><i class="fa-solid fa-right-to-bracket li-icon"></i> Cliquez sur l'onglet pour ouvrir l'interface.</li>
     </ul>
 
-    <h2>📜 Étape 3 : Choisir votre document</h2>
+    <h2><i class="fa-solid fa-file-lines"></i> Étape 3 : Choisir votre document</h2>
     <ul class="step-list">
-        <li>Parcourez la liste des documents disponibles (<em>Extrait de naissance, Casier judiciaire, Certificat de nationalité, etc.</em>).</li>
-        <li>Prenez connaissance des pièces requises et du tarif de base affiché (ex: à partir de 5 000 FCFA).</li>
-        <li>Cliquez sur le bouton <strong>"Commencer"</strong> sous le document souhaité.</li>
+        <li><i class="fa-solid fa-list-check li-icon"></i> Parcourez la liste des documents disponibles (<em>Extrait de naissance, Casier judiciaire, Certificat de nationalité...</em>).</li>
+        <li><i class="fa-solid fa-tags li-icon"></i> Prenez connaissance des pièces requises et du tarif de base affiché (ex: à partir de 5 000 FCFA).</li>
+        <li><i class="fa-solid fa-circle-play li-icon"></i> Cliquez sur le bouton <strong>"Commencer"</strong> sous le document souhaité.</li>
     </ul>
 
-    <h2>👤 Étape 4 : Connexion ou Inscription</h2>
+    <h2><i class="fa-solid fa-user-plus"></i> Étape 4 : Connexion ou Inscription</h2>
     <ul class="step-list">
-        <li>Sur l'écran <strong>"Hey, Join us right now"</strong>, remplissez vos informations : Nom, Email, et sélectionnez votre <strong>Pays de résidence</strong>.</li>
-        <li>Définissez et confirmez votre mot de passe, puis cliquez sur <strong>"Se connecter"</strong>.</li>
+        <li><i class="fa-solid fa-id-card li-icon"></i> Sur l'écran <strong>"Hey, Join us right now"</strong>, remplissez vos informations : Nom, Email.</li>
+        <li><i class="fa-solid fa-earth-africa li-icon"></i> Sélectionnez votre <strong>Pays de résidence</strong> dans la liste déroulante.</li>
+        <li><i class="fa-solid fa-key li-icon"></i> Définissez et confirmez votre mot de passe, puis cliquez sur <strong>"Se connecter"</strong>.</li>
     </ul>
 
-    <h2>📑 Étape 5 : Remplir le formulaire & Soumettre</h2>
+    <h2><i class="fa-solid fa-pen-to-square"></i> Étape 5 : Remplir le formulaire & Soumettre</h2>
     <ul class="step-list">
-        <li><strong>Fiche de procuration :</strong> Téléchargez-la, remplissez-la et joignez-la si demandé.</li>
-        <li>Renseignez les informations obligatoires (ex: <em>Numéro de l'extrait de naissance</em>).</li>
-        <li>Cochez la case <strong>"Livraison à domicile"</strong> si vous souhaitez recevoir le format physique.</li>
-        <li>Acceptez les termes et conditions, puis cliquez sur <strong>"Soumettre"</strong>.</li>
+        <li><i class="fa-solid fa-download li-icon"></i> <strong>Fiche de procuration :</strong> Téléchargez-la, remplissez-la et joignez-la si demandé.</li>
+        <li><i class="fa-solid fa-keyboard li-icon"></i> Renseignez les informations obligatoires (ex: <em>Numéro de l'extrait de naissance</em>).</li>
+        <li><i class="fa-solid fa-truck li-icon"></i> Cochez la case <strong>"Livraison à domicile"</strong> si vous souhaitez recevoir le format physique.</li>
+        <li><i class="fa-solid fa-check-square li-icon"></i> Acceptez les termes et conditions, puis cliquez sur <strong>"Soumettre"</strong>.</li>
     </ul>
 
-    <h2>📨 Étape 6 : Suivi et Facturation</h2>
+    <h2><i class="fa-solid fa-envelope-open-text"></i> Étape 6 : Suivi et Facturation</h2>
     <ul class="step-list">
-        <li>Un message de succès s'affiche : <em>"Bravo ! Nous avons bien reçu votre demande..."</em></li>
-        <li>Consultez votre boîte mail : un message automatique vous est envoyé avec votre <strong>facture PDF détaillée</strong>.</li>
-        <li>Suivez l'avancement à tout moment depuis votre <strong>Tableau de bord</strong> sur le site.</li>
+        <li><i class="fa-solid fa-circle-check li-icon" style="color: #28a745;"></i> Un message de succès s'affiche : <em>"Bravo ! Nous avons bien reçu votre demande..."</em></li>
+        <li><i class="fa-solid fa-receipt li-icon"></i> Consultez votre boîte mail : un message automatique vous est envoyé avec votre <strong>facture PDF détaillée</strong>.</li>
+        <li><i class="fa-solid fa-chart-line li-icon"></i> Suivez l'avancement à tout moment depuis votre <strong>Tableau de bord</strong> sur le site.</li>
     </ul>
 
     <div class="delivery-section">
-        <h3>🛵 Modes de livraison disponibles :</h3>
-        <ul>
-            <li><strong>En Côte d'Ivoire :</strong> Livraison physique à domicile par coursier sécurisé.</li>
-            <li><strong>Hors de Côte d'Ivoire (Diaspora) :</strong> Expédition du document physique par voie aérienne.</li>
-            <li><strong>Partout dans le monde :</strong> Réception immédiate d'une copie numérique conforme au format <span class="badge">PDF</span>.</li>
+        <h3><i class="fa-solid fa-truck-ramp-box"></i> Modes de livraison disponibles :</h3>
+        <ul class="delivery-list">
+            <li><i class="fa-solid fa-motorcycle"></i> <strong>En Côte d'Ivoire :</strong> Livraison physique à domicile par coursier sécurisé.</li>
+            <li><i class="fa-solid fa-plane-departure"></i> <strong>Hors de Côte d'Ivoire (Diaspora) :</strong> Expédition du document physique par voie aérienne.</li>
+            <li><i class="fa-solid fa-file-pdf" style="color: #dc3545;"></i> <strong>Partout dans le monde :</strong> Réception immédiate d'une copie numérique conforme <span class="badge">PDF</span>.</li>
         </ul>
     </div>
 
     <div class="footer">
-        Guide généré automatiquement à partir du tutoriel officiel GlobalDocs - AFG Consulting.
+        <i class="fa-solid fa-copyright"></i> Guide d'aide utilisateur — Document généré à partir du tutoriel officiel GlobalDocs.
     </div>
 </div>
 
